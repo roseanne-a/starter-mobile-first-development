@@ -36,6 +36,7 @@ img {
 
 .group {
   display: flex;
+  flex-direction: column;
   margin: 50px;
 }
 
@@ -50,4 +51,14 @@ img {
 
 .itemtwo {
   flex: 2;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
